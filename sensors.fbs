@@ -1,0 +1,17 @@
+// Example on how to use schema with lots of sensor data.
+// To generate the h file run:
+// flatc --cpp sensors.fbs
+
+table Sensors {
+  id:long;
+  name:string;
+  moisture:float;
+  temperature:float;
+  pressure:float;
+  light:float;
+  ahumidity:float;
+  wph:float;
+  wflow:float;
+}
+
+root_type Sensors;
